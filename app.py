@@ -26,7 +26,7 @@ def create_ticket():
     letters = string.ascii_lowercase
     uniq = ''.join(random.choice(letters) for i in range(10))
 
-    path = "tickets/ticket_{}".format(uniq)
+    path = "/opt/ccg_ticketing/tickets/ticket_{}".format(uniq)
 
     touch_command = "touch {}".format(path)
     os.system(touch_command)
